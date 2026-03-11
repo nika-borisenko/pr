@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Имя вашего образа в Docker Hub
-        DOCKER_IMAGE = 'your_dockerhub_username/my-laravel-app'
+        DOCKER_IMAGE = 'nika16/my-laravel-app'
         // Используем учетные данные, которые мы добавили ранее
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
     }
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Получаем код из репозитория
-                git branch: 'main', url: 'https://github.com/your_username/your_repo.git'
+                git branch: 'main', url: 'https://github.com/nika-borisenko/pr.git'
             }
         }
 
