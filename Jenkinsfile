@@ -5,7 +5,7 @@ pipeline {
         // Имя вашего образа в Docker Hub
         DOCKER_IMAGE = 'nika16/my-laravel-app'
         // Используем учетные данные, которые мы добавили ранее
-        DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
+        DOCKER_CREDENTIALS_ID = '9ddab86a-ac3c-4129-8d08-677501f0a7b0'
     }
 
     stages {
